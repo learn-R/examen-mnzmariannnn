@@ -1,0 +1,29 @@
+---
+title: "Percepción de las Fuerzas de Orden y Seguridad en Colombia en 2018"
+author: "Marian Muñoz"
+date: "2022-11-18"
+output: html_document:
+  theme: sandstone
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1. Abstract
+
+Como bien sabemos, Colombia es un país que ha sufrido históricamente altos niveles de violencia, tanto policial, política, sicaria, entre otras. Desde la perspectiva de algunos investigadores, esta violencia tiene su origen en múltiples pilares. .A propósito de estos datos, un aspecto relevante a investigar es la confianza que mantiene la ciudadanía en cuanto a las Fuerzas de Orden y Seguridad, ya que son instituciones que trabajan en defensa de la nación y la ciudadanía, junto con esto, es interesante considerar la corrupción dentro de estas entidades, y cómo lo percibe la ciudadanía colombiana. Siguiendo esta línea, la investigación presente buscará analizar la  percepción de la ciudadanía colombiana frente a las Fuerzas de Orden y Seguridad, considerando la confianza existente y también la corrupción que puede existir, y también el sexo y la edad de los encuestados. Para esto, se utilizará la base de datos del Latinobarómetro (2018), sobre la que se realizará un análisis poblacional
+
+```{r cars}
+summary(cars)
+```
+
+## Introducción 
+
+Colombia...
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
