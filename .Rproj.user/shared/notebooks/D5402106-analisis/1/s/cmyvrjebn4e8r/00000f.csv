@@ -1,0 +1,4 @@
+"0","plot_model(modelosurvey, type = c(""pred""),"
+"0","           terms = c(""EDAD""),  digits = 3,"
+"0","           axis.title = c(""EDAD"", ""Precio que pagarían por corrupción""),"
+"0","           title = ""Gráfico 1"")"

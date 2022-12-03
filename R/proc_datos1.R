@@ -73,12 +73,45 @@ head(PER_FZAS_proc)
 
 saveRDS(PER_FZAS_proc, file = "output/data/datos_proc.rds") #Guardamos este único set de datos en datos_proc.rds con los datos procesados
 
+#Creacion Objeto encuesta
 
-  
+PER_FZAS_proc %>% 
+  group_by(SEXO) %>% 
+  frq(conf_policia)
 
+PER_FZAS_proc %>% 
+  group_by(EDAD) %>% 
+  frq(conf_fuerzasarmadas)
 
+obj_encuesta <- PER_FZAS_proc %>%
+  as_survey_design(ids = 1, 
+                   weights = ponderador)
 
+#Análisis Bivariado
 
+obj_encuesta %>% 
+  group_by(SEXO, conf_fuerzasarmadas) %>%
+  summarise(prop = survey_prop(na.rm = T)) %>%
+  mutate(per = prop*100) %>%
+  ungroup()
+
+obj_encuesta %>% 
+  group_by(SEXO, conf_policia) %>%
+  summarise(prop = survey_prop(na.rm = T)) %>%
+  mutate(per = prop*100) %>%
+  ungroup()
+
+obj_encuesta %>%
+  group_by(EDAD, preciocorrupcion) %>%
+  summarise(prop = survey_prop(na.rm = T)) %>%
+  mutate(per = prop*100) %>%
+  ungroup()
+
+obj_encuesta %>%
+  group_by(EDAD, corrupcionpolicias) %>%
+  summarise(prop = survey_prop(na.rm = T)) %>%
+  mutate(per = prop*100) %>%
+  ungroup()
 
 
 

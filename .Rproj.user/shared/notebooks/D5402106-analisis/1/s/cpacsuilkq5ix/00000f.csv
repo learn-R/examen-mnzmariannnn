@@ -1,0 +1,5 @@
+"0","modelo1 <- glm(preciocorrupcion ~ EDAD,  family = binomial(link = ""logit""),weights = ponderador, data = datos_proc)"
+"0","modelo2 <- glm(preciocorrupcion ~ SEXO + EDAD + corrupcionpolicias, family = binomial(link = ""logit""), weights = ponderador, data = datos_proc)"
+"0","modelo3 <- glm(preciocorrupcion ~ EDAD + SEXO + conf_fuerzasarmadas, family = binomial(link = ""logit""), weights = ponderador, data = datos_proc)"
+"0","modelo4 <- glm(preciocorrupcion ~ EDAD + SEXO + conf_policia, family = binomial(link = ""logit""),weights = ponderador, data = datos_proc)"
+"0","modelosurvey <- svyglm(preciocorrupcion ~ EDAD + SEXO + conf_policia + conf_fuerzasarmadas, family = binomial(link = ""logit""), design = obj_encuesta, weights = ponderador, data = datos_proc)"

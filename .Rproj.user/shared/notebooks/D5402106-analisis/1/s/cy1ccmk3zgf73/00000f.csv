@@ -1,0 +1,7 @@
+"0","sjPlot::tab_model(list(modelosurvey),"
+"0","                  show.ci= FALSE,"
+"0","                  transform = 'exp', "
+"0","                  df.method = 'wald',"
+"0","                  encoding = ""UTF-8"","
+"0","                  dv.labels= c(""Modelo 5""),"
+"0","                  string.pred = ""Predictores"", string.est = ""β"")"

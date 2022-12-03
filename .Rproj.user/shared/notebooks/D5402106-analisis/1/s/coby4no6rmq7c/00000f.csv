@@ -1,0 +1,3 @@
+"0","obj_encuesta <- datos_proc %>%"
+"0","  as_survey_design(ids = 1, "
+"0","                   weights = ponderador)"
