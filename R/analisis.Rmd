@@ -1,5 +1,5 @@
 ---
-title: "Percepción de las Fuerzas de Orden y Seguridad en Colombia en 2018"
+title: "El precio de la corrupción en las Fuerzas de Orden y Seguridad en Colombia en 2018"
 author: "Marian Muñoz"
 date: "2022-11-18"
 output: html_document:
@@ -13,21 +13,30 @@ knitr::opts_chunk$set(echo = TRUE)
 ## 1. Abstract
 :::
 Como bien sabemos, Colombia es un país que ha sufrido históricamente altos niveles 
-de violencia tanto política, policial, delictiva, entre muchas otras. Desde la perspectiva de algunos investigadores, esta violencia tiene su origen en múltiples 
-pilares como la propia historia del país. La respuesta policial puede 
-ser considerada por parte de la ciudadanía como algo fundamental para el control de 
-gran parte de la violencia. Sin embargo, las mismas Fuerzas de Orden y Seguridad se 
-han visto involucradas en algunos casos de corrupción, especialmente por involucramiento con bandas criminales, dedicadas por ejemplo al tráfico de drogas
-y robos. Frente  a esto, esta investigación busca conocer la percepción de la 
-ciudadanía frente a las Fuerzas militares y policiales, considerando el precio
-de la corrupción y otros niveles de confianza sobre estas fuerzas. Para esto, se utilizará la base de datos del Latinobarómetro (2018), sobre la que se realizará
+de violencia tanto política, policial, delictiva, entre muchas otras. Desde la perspectiva 
+de algunos investigadores, esta violencia tiene su origen en múltiples pilares como 
+la propia historia del país. La respuesta policial puede ser considerada por parte 
+de la ciudadanía como algo fundamental para el control de gran parte de la violencia.
+Sin embargo, las mismas Fuerzas de Orden y Seguridad se han visto involucradas en 
+algunos casos de corrupción, especialmente por involucramiento con bandas criminales,
+dedicadas por ejemplo al tráfico de drogas y robos. Frente  a esto, esta investigación 
+busca conocer la percepción de la ciudadanía frente a las Fuerzas militares y policiales, 
+considerando el precio de la corrupción y otros niveles de confianza sobre estas fuerzas. 
+Para esto, se utilizará la base de datos del Latinobarómetro (2018), sobre la que se realizará
 una regresión logística. 
 :::
 
 ##2. Introducción 
 :::
-Colombia 
-:::
+Según la Organización de las Naciones Unidas (ONU) los niveles de violencia en Colombia 
+han aumentado gravemente, de hecho, la organización señala que se ha visto una violencia 
+que no se veía desde el 2014. Esto causa una alta preocupación en 
+la ciudadanía colombiana, las cuales pueden sentirse amenazados e indefensos en cuanto 
+a su seguridad. A su vez, y como señala en una investigación de CIPER Chile (2020), 
+la Policia Nacional de Colombia ha sido involucrada encasos de corrupcion y prácticas de
+violencia, según sus conclusiones la política dejó de gobernar de manera efectiva al 
+sector policial. 
+
 
 ##3. Análisis
 
@@ -131,12 +140,13 @@ plot_model(modelosurvey, type = c("pred"),
            title = "Gráfico 5")
 ```
 
-##. Conclusiones
-:::
-Finalmente
 
 
-:::
+## Referencias 
+
+Dammert, L. (2020, octubre 23). El lado oscuro de las dos policías ejemplares de Latinoamérica. CIPER Chile; Fundación CIPER. https://www.ciperchile.cl/2020/10/23/el-lado-oscuro-de-las-dos-policias-ejemplares-de-latinoamerica/
+
+Oquendo, C. (2022, marzo 3). La ONU alerta de unos niveles de violencia en Colombia que no se veían desde 2014. Ediciones EL PAÍS S.L. https://elpais.com/internacional/2022-03-03/la-onu-alerta-de-unos-niveles-de-violencia-en-colombia-que-no-se-veian-desde-2014.html
 
 
 
